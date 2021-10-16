@@ -4,6 +4,6 @@
 * data/nytimes_news_articles : file data gốc
 * Service/Split_Articles : Tách article
 * Service/Split_Words : Tách từ  (Chưa có)
-* Service/
+* Service/Create_Dict_Word_MVB :Tạo cặp Từ - Mã Văn Bản .(Chưa có )
 * Service/Sort :Sắp xếp các cặp <Từ , MVB> (Chưa có)
 * Service/Create_Interted_Index : Tạo chỉ mục ngược (Chưa có)
