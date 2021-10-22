@@ -1,7 +1,7 @@
 import re
 import json
 
-url= "..\data\\nytimes"
+url= ".\data\Articles\\nytimes"
 dic = {}
 i = 1
 for i in range(1,1001):
