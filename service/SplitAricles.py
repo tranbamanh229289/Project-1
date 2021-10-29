@@ -7,11 +7,11 @@ URL = "URL: http://www.nytimes.com/"
 N_URL = len(URL)
 j=2
 for i in range(1001):
-    namefile = '../data/Articles/nytimes' + str(i) + ".txt"
+    namefile = '../data/articles/nytimes' + str(i) + ".txt"
     try:
         f=open(namefile, mode='w', encoding='utf-8')
         while True:
-            if (a[j][:28] != URL and a[j+1] != "/n"):
+            if (a[j][:N_URL] != URL and a[j+1] != "/n"):
                 f.write(a[j])
                 j=j+1
             else:
