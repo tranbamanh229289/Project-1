@@ -1,7 +1,7 @@
 import re
 import json
 
-url= "../data/Articles/nytimes"
+url= "../data/articles/nytimes"
 dic = {}
 for i in range(0, 1001):
     with open(url + f'{i}' + '.txt', 'r', encoding='utf-8') as f:
