@@ -11,7 +11,7 @@ for i in range(1, 1001):
         for word in words:
             if (not word.startswith("[a-z0-9]")) or (not word.endswith("[a-z0-9]")) \
                 or (not word[0].isdigit()) or (not word[-1].isdigit()):
-                word = re.sub("[^a-z0-9$:-]",'', word)
+                word = re.sub("[^a-z0-9$':-]",'', word)
                 word = re.sub(r'\s+', ' ', word)
             key_value.append(word)
         key_value = list(set(key_value))
