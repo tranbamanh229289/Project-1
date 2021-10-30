@@ -7,14 +7,19 @@ word_number_dict = {}
 list_word = []
 for key in data.keys():
     for value in data[key]:
-        if value not in list_word:
-            list_word.append(value)
-for word in list_word:
-    word_number_dict[word] = []
-for key in data.keys():
-    for value in data[key]:
-        if value in list_word:
-            word_number_dict[value].append(key)
+#         if value not in list_word:
+#             list_word.append(value)
+# for word in list_word:
+#     word_number_dict[word] = []
+# for key in data.keys():
+#     for value in data[key]:
+#         if value in list_word:
+#             word_number_dict[value].append(key)
 
-with open('word_number.json', 'w') as fp:
-    json.dump(word_number_dict, fp)
+# with open('word_number.json', 'w') as fp:
+#     json.dump(word_number_dict, fp)
+
+        word_num = [value, (key)]
+        list_word.append(word_num)
+with open('list_word_number.txt', 'w') as file:
+    file.write(str(list_word))
