@@ -1,5 +1,4 @@
-import json
-from service.Split_Words import split_words
+from service.create_inverse_index.Split_Words import split_words
 
 # with open('../data/split_words.json', 'r') as f:
 #     data = json.load(f)

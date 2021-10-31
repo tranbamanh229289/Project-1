@@ -1,6 +1,5 @@
-from service.Summarize_Words import summarize_words
+from service.create_inverse_index.Summarize_Words import summarize_words
 import json
-import numpy as np
 
 data = summarize_words
 data.sort(key=lambda item: item[0])
@@ -31,8 +30,8 @@ if len(temp_doc):
     list_doc_id.append(temp_doc)
     append_dict(temp_word, len(temp_doc), i )
 
-# with open('../data/sort.json', 'w') as fp:
-#     json.dump(data, fp)
+with open('../data/sort.json', 'w') as fp:
+    json.dump(data, fp)
 
 with open('../data/list_doc_id.json','w') as fp:
     json.dump(list_doc_id,fp)
