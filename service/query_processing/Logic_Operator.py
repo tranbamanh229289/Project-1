@@ -4,7 +4,9 @@ def operatorOr(a, b):
    return c
 
 def operatorAnd(a,b):
-   return 1
+   c = a * b
+   c.sort()
+   return c
 
 def operatorNot(a,b):
    return 1
