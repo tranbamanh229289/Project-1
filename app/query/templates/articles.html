@@ -1,0 +1,8 @@
+{% extends "index.html" %}
+{% block list_article %}
+<p> {{ number_articles }} documents found in about {{ execute_time }} seconds</p>
+{% for item in articles %}
+    <a href="/article/{{ item.id_article }}">{{item.title}}</a>
+    <br/>
+{% endfor %}
+{% endblock%}

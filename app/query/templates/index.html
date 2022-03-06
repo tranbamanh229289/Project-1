@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LALA</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/search.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <img src="{% static 'image/google-logo-9834.png' %}" alt="Google" height="40" width="120" data-atf="1" data-frt="0">
+            <form method="POST" action="{% url 'articles' %}">
+                {% csrf_token %}
+                {% if f %}
+                {{ f }}
+                {% else %}
+                <input type=text" placeholder="Enter query ..." name="query" required id="query" value=""/>
+                {% endif %}
+            </form>
+        </div>
+        <hr/>
+        <div class="result">
+            {% block list_article %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+<script>
+    let ip = document.getElementById("query");
+    console.log(ip);
+</script>
+</html>
