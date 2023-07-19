@@ -1,4 +1,4 @@
-# Project-1 : Xây dựng máy tìm kiếm, sử dụng mô hình boolean
+# Project-1 : Giải pháp boolean cho tìm kiếm thông tin
 ## Cấu trúc project :
 ### file Data:
 * Data/Articles: Chứa các article được đánh chỉ mục từ từ 0-999
